@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.attribution {
+    margin-top: -2.3vw;
+    font-size: 1vw;
+    text-align: center;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(0, 0%, 100%);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1vw;
+}
+.main {
+    width: 21vw;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main p {
+    color: hsl(215, 51%, 70%);
+    font-size: 1.2vw;
+    margin-bottom: 2vw;
+}
+
+.main h2 {
+    color: hsl(0, 0%, 100%);
+    margin: 2vw 0;
+}
+
+.main h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.image img {
+    width: 19vw;
+    border-radius: 5px;
+}
+
+.color-image {
+    position: absolute;
+    top: 3.6vw;
+    width: 19vw;
+    height: 19vw;
+    background-image: none;
+    background-color: transparent;
+}
+
+.color-image:hover {
+    background-image: url("images/icon-view.svg");
+    background-color: hsl(178, 100%, 50%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    opacity: 0.4;
+    transition: background-color ease-in-out 0.3s;
+    border-radius: 5px;
+}
+
+.rate-and-time {
+    display: flex;
+    height: 1.4vw;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+
+.rate-and-time img {
+    margin-right: 0.3vw;
+    height: 100%;
+}
+.rate-and-time span {
+    position: relative;
+    bottom: 3px;
+}
+
+.eth-rate {
+    color: hsl(178, 100%, 50%);
+}
+
+.time-left {
+    color: hsl(215, 51%, 70%);
+}
+
+.credits {
+    display: flex;
+    align-items: center;
+    margin: 2vw 0;
+}
+.credits img {
+    width: 2.5vw;
+    height: auto;
+    margin-right: 1vw;
+    border-radius: 100%;
+    border: 1px solid hsl(0, 0%, 100%);
+}
+
+.credits span {
+    font-size: 1vw;
+    color: hsl(215, 51%, 70%);
+}
+
+.credits strong {
+    color: hsl(0, 0%, 100%);
+}
+
+.credits strong:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+hr {
+    border: 0.1vw solid hsl(215, 32%, 27%);
+}
+
+@media (max-width: 362px) {
+    .wrapper {
+        width: 100%;
+        margin-bottom: 1vw;
+    }
+
+    .main {
+        width: 89vw;
+        padding: 7vw;
+    }
+
+    .image img {
+        width: 75vw;
+        height: 65vw;
+    }
+
+    .color-image {
+        width: 75vw;
+        height: 65vw;
+        position: absolute;
+        top: 7.28vw;
+    }
+
+    .main p {
+        font-size: 4.2vw;
+        margin-bottom: 20px;
+    }
+
+    .main h2 {
+        font-size: 5.5vw;
+        margin: 20px 0;
+    }
+
+    .rate-and-time {
+        height: 5vw;
+    }
+    .rate-and-time img {
+        margin-right: 2vw;
+        width: 5vw;
+        height: 5vw;
+    }
+
+    .credits {
+        margin-top: 20px;
+    }
+    .credits img {
+        width: 10vw;
+        margin-right: 4vw;
+    }
+
+    .credits span {
+        font-size: 4vw;
+    }
+
+    hr {
+        margin-top: 20px;
+    }
+
+    .attribution {
+        margin-top: -2.3vw;
+        font-size: 3.7vw;
+    }
+}
